@@ -1,0 +1,4 @@
+Pillow>= 8.0
+voluptuous
+PyYAML>=3.11
+paho-mqtt
