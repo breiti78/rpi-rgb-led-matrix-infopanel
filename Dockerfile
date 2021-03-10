@@ -27,5 +27,3 @@ WORKDIR /app/infopanel
 # Run installation of rpi-grb-led-matrix
 
 RUN python3 setup.py install
-
-CMD python3 -m infopanel --config /app/infopanel/infopanel.yaml
