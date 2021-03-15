@@ -8,7 +8,6 @@ WORKDIR /app
 
 # install dependencies
 RUN apt-get install libyaml-dev python3-setuptools git -y\
-    && mkdir infopanel\
-    && cd infopanel\
     && git clone https://github.com/breiti78/infopanel.git\
+    && cd infopanel\
     && python3 setup.py install
