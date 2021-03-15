@@ -6,12 +6,8 @@ FROM breiti78/rpi-rgb-led-matrix-docker:latest
 # set the working directory in the container
 WORKDIR /app
 
-# copy the dependencies file to the working directory
-COPY requirements.txt requirements.txt
-
 # install dependencies
-RUN pip install -r requirements.txt \
-    && apt-get install libyaml-dev python3-setuptools git -y
+RUN apt-get install libyaml-dev python3-setuptools git -y
 
 # copy the content of the local src directory to the working directory
 
