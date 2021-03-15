@@ -9,9 +9,9 @@ WORKDIR /app
 # copy the dependencies file to the working directory
 COPY requirements.txt requirements.txt
 
-WORKDIR /app
-
 # install dependencies
+RUN pip install -r requirements.txt \
+    && apt-get install libyaml-dev python3-setuptools git -y
 
 # copy the content of the local src directory to the working directory
 
@@ -22,5 +22,4 @@ WORKDIR /app/infopanel
 
 # Run installation of rpi-grb-led-matrix
 
-RUN apt-get install libyaml-dev python3-setuptools git python3-matplotlib -y\
-    && python3 setup.py install
+RUN python3 setup.py install
