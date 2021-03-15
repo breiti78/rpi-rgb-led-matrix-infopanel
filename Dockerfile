@@ -7,15 +7,8 @@ FROM breiti78/rpi-rgb-led-matrix-docker:latest
 WORKDIR /app
 
 # install dependencies
-RUN apt-get install libyaml-dev python3-setuptools git -y
-
-# copy the content of the local src directory to the working directory
-COPY src/infopanel/* /app/
-COPY infopanel-config.yaml /app/infopanel
-
-WORKDIR /app/infopanel
-
-# Run installation of rpi-grb-led-matrix
-
-RUN ls\
+RUN apt-get install libyaml-dev python3-setuptools git -y\
+    && mkdir infopanel\
+    && cd infopanel\
+    && git clone https://github.com/breiti78/infopanel.git\
     && python3 setup.py install
