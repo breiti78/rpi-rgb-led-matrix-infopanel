@@ -18,4 +18,5 @@ WORKDIR /app/infopanel
 
 # Run installation of rpi-grb-led-matrix
 
-RUN python3 setup.py install
+RUN ls\
+    && python3 setup.py install
