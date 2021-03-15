@@ -11,12 +11,11 @@ RUN apt-get install libyaml-dev python3-setuptools git -y
 
 # copy the content of the local src directory to the working directory
 
-COPY ./src .
 COPY infopanel-config.yaml /app/infopanel
 
 WORKDIR /app/infopanel
 
 # Run installation of rpi-grb-led-matrix
 
-RUN ls\
+RUN git clone https://github.com/breiti78/infopanel.git
     && python3 setup.py install
