@@ -8,8 +8,8 @@ WORKDIR /app
 
 # install dependencies
 RUN apt-get update\
-    && python3 -m pip install --upgrade pip -y\
-    && python3 -m pip install --upgrade Pillow -y\
+    && python3 -m pip install --upgrade pip \
+    && python3 -m pip install --upgrade Pillow \
     && apt-get install libyaml-dev python3-setuptools git -y
 
 RUN git clone https://github.com/breiti78/infopanel.git\
