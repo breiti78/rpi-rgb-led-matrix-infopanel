@@ -7,9 +7,9 @@ ARG DEBIAN_FRONTEND=noninteractive
 WORKDIR /app
 
 # install dependencies
-RUN apt-get update && apt-get install libyaml-dev python3-setuptools -y
-# copy the content of the local src directory to the working directory
+#RUN apt-get update && apt-get install libyaml-dev python3-setuptools -y
 
+# copy the content of the local src directory to the working directory
 COPY ./src .
 
 WORKDIR /app/infopanel
