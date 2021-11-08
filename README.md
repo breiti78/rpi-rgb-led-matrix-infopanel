@@ -1,7 +1,7 @@
 Infopanel Docker Image
 =========
 
-.. image:: https://travis-ci.org/partofthething/infopanel.svg?branch=master
+   image:: https://travis-ci.org/partofthething/infopanel.svg?branch=master
     :target: https://travis-ci.org/partofthething/infopanel
     
 Infopanel is a tool to organize and display live information from many sources (various sensors, 
