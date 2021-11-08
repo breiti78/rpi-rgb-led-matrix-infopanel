@@ -15,4 +15,4 @@ RUN git clone https://github.com/breiti78/infopanel.git\
     && python3 --version
 
 # Run installation of rpi-grb-led-matrix
-RUN python3 setup.py install
+RUN python3 /app/infopanel/setup.py install
