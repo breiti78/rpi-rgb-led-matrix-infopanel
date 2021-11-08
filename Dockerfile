@@ -1,14 +1,9 @@
 # set base image (host OS)
 FROM breiti78/rpi-rgb-led-matrix-docker:latest
 
-#ARG DEBIAN_FRONTEND=noninteractive
+ARG DEBIAN_FRONTEND=noninteractive
 
 # set the working directory in the container
-WORKDIR /app
-
-# copy the dependencies file to the working directory
-COPY requirements.txt requirements.txt
-
 WORKDIR /app
 
 # install dependencies
