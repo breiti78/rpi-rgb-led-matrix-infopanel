@@ -11,7 +11,7 @@ WORKDIR /app
 
 # copy the content of the local src directory to the working directory
 RUN git clone https://github.com/breiti78/infopanel.git\
-    && cd infopanel\
+    && cd infopanel
 
 # Run installation of rpi-grb-led-matrix
 RUN python3 setup.py install
