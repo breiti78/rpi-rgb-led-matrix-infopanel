@@ -133,4 +133,3 @@ building your own sprites and animations. See ``tests/test_config.yaml`` for ful
 
 .. note:: If you set ``brightness`` in the mode section, it will constantly override any
     adjustments you make via the MQTT controller. Leave it out for useful remote control.
-
